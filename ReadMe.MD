@@ -17,7 +17,7 @@ See the Video Tutorial: <br />
 * [Vite](https://vitejs.dev/)
 
 ## Installation
-* Clone this repo `https://github.com/EBEREGIT/react-nodejs-chatgpt-tutorial`
+* Clone this repo `https://github.com/almightyzeus/react-nodejs-chatgpt-tutorial.git`
 * Navigate into the repo `cd react-nodejs-chatgpt-tutorial`
 
 * Navigate into the `backend` folder `cd backend`
