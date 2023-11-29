@@ -23,7 +23,8 @@ See the Video Tutorial: <br />
 * Navigate into the `backend` folder `cd backend`
 * Install the dependencies ``npm install``
 * Replace the configuration data(API_KEY and ORG_ID) with your own data in the `Constants.js` file
-* Ideally you should be storing the API_KEY in environment variables or use a keystore. Please refer [Best Practices for API Key Safety(https://help.openai.com/en/articles/5112595-best-practices-for-api-key-safety#h_03e323d520)
+* Ideally you should be storing the API_KEY in environment variables or use a keystore. 
+Please refer [Best Practices for API Key Safety](https://help.openai.com/en/articles/5112595-best-practices-for-api-key-safety#h_03e323d520)
 * Run the `index.js` file `node index`
 
 *That will start the backend server on port `8000`: http://localhost:8000/*
