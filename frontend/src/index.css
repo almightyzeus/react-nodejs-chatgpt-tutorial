@@ -16,10 +16,11 @@
 
 html, body{
   scroll-behavior: smooth;
+  overflow-y: hidden;
 }
 
 h1 {
-  font-size: 3.2em;
+  font-size: 3em;
   line-height: 1.1;
   text-align: center;
   position: sticky;
@@ -27,16 +28,25 @@ h1 {
   background-color: #242424;
 }
 
-main{
+main {
   max-width: 800px;
   margin: auto;
+  display: flex;
+  flex-direction: column; /* Adjust to a vertical layout */
+  height: 100vh; /* Set the main container to take full height of the viewport */
+}
+
+section {
+  flex-grow: 1; /* Allow the chat section to take the available space */
+  overflow-y: auto; /* Enable vertical scrolling for the chat section */
 }
 
 p{
-  background-color: darkslategray;
+  background-color: rgb(17, 17, 220);
   max-width: 70%;
   padding: 15px;
   border-radius: 50px;
+  color: white;
 }
 
 p span{
@@ -51,7 +61,8 @@ p span:first-child{
   text-align: right;
   margin-left: 30%;
   display: flex;
-  flex-direction: row-reverse;
+  background-color: lightgrey;
+  color: black;
 }
 
 .hide {
@@ -59,21 +70,44 @@ p span:first-child{
   display: none;
 }
 
-form{
+form {
   text-align: center;
-  position: sticky;
+  position: relative;
   bottom: 0;
+  margin-top: auto; /* Push the form to the bottom */
 }
 
+
 input{
-  width: 100%;
+  width: calc(100% - 22px);
   height: 40px;
   border: none;
   padding: 10px;
   font-size: 1.2rem;
-  background-color: rgb(28, 23, 23);
+  background-color: white;
+  color: black;
 }
 
 input:focus{
   outline: none;
 }
+
+.loading-mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.8); /* semi-transparent white background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999; /* set a high z-index to ensure it appears on top of everything */
+}
+
+.loading-mask p {
+  font-size: 16px;
+  color: #333;
+  background-color:rgba(255, 255, 255, 0.8);
+}
+
