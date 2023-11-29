@@ -31,4 +31,4 @@ See the Video Tutorial: <br />
 * Install the dependencies ``npm install``
 * Start the local server ``npm run dev``
 
-*That will open the project on your default browser: http://127.0.0.1:5173/. You can now chat with the AI from your browser*
+*That will open the project on your default browser: http://127.0.0.1:3000/. You can now chat with the AI from your browser*
