@@ -102,7 +102,7 @@ function App() {
 
   return (
     <main>
-      <h1>ChatGPT 3.5-Turbo React+Node</h1>
+      <h1>Custom AI Chatbot</h1>
 
       <section className="chat-section">
         {chats && chats.length
