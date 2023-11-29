@@ -22,7 +22,7 @@ See the Video Tutorial: <br />
 
 * Navigate into the `backend` folder `cd backend`
 * Install the dependencies ``npm install``
-* Replace the configuration data with your own data in the `index.js` file
+* Replace the configuration data(API_KEY and ORG_ID) with your own data in the `Constants.js` file
 * Run the `index.js` file `node index`
 
 *That will start the backend server on port `8000`: http://localhost:8000/*
