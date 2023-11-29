@@ -34,3 +34,8 @@ Please refer [Best Practices for API Key Safety](https://help.openai.com/en/arti
 * Start the local server ``npm run dev``
 
 *That will open the project on your default browser: http://127.0.0.1:3000/ or http://localhost:3000/. You can now chat with the AI from your browser*
+
+## Usage Instructions
+* Please upload PDFs about a specific topic/topics that you want the chatbot to know about using the Choose Files Button and then click on Upload.
+* Once the files have been successfully processed, you should see an excel generated with the embedding data in `backend/embedding/` path.
+* Start asking questions to the Chatbot and it should answer as per the data provided to it.
